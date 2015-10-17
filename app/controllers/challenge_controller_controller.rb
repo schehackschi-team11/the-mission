@@ -1,4 +1,9 @@
 class ChallengeControllerController < ApplicationController
+  def index 
+      @challenges = Challenge.all
+  end
+
+  
   def challenge
   end
 
