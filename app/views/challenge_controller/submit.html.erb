@@ -1,2 +1,21 @@
-<h1>ChallengeController#submit</h1>
-<p>Find me in app/views/challenge_controller/submit.html.erb</p>
+
+
+      <div>
+      <h1>Submit your Design</h1>
+		<p>Take a picture or video of your first solution to share it with the world - It's okay if it's not quite perfect - engineering is all about improving over time.</p>
+		<%= form_for Submission.new, url: challenge_controller_result_path do |f|  %>
+		<%= f.label :description, "Describe your Solution:" %>
+		<%= f.text_area :description, class: "form-control" %>
+		<%= f.label :file, "Upload a Picture of Video of your Design:" %>
+		<%= f.file_field :file, class: "form-control" %>
+		<%= f.submit class: "form-control" %>
+
+		<% end %>
+      </div>
+
+      
+
+      
+      
+
+   
