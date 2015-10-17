@@ -9,7 +9,7 @@
     </div>
     </div>
 
-      
+    <div class="jumbotron">
    
         <div class="row">
             <h2>Civil Engineer</h2>
@@ -32,7 +32,7 @@
             <p class="other-girls">Prototypes from other students</p>
     </div>
     <div class="container-fluid">
-        <% Submission.all.each do |submission| %>
+        <% @challenge.submissions.each do |submission| %>
             <div class="row">
                 <div class="col-sm-6 col-md-4">
                     <div class="thumbnail">

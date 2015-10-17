@@ -2,8 +2,9 @@
       <h1>Design Submission</h1>
       <img class="take-pic" src="http://91ef69bade70f992a001-b6054e05bb416c4c4b6f3b0ef3e0f71d.r93.cf3.rackcdn.com/cute-girl-calling-by-phone-cartoon-illustration-100199017.jpg">
 		<p class="submit-text" >Take a picture or video of your first solution to share it with the world. <br> It's okay if it's not quite perfect. <br> Engineering is all about improving over time.</p>
-		
+
         <%= form_for @submission, url: challenge_post_result_path do |f|  %>
+    <%= f.hidden_field :challenge_id %>
 		<%= f.label :description, "Describe your Solution:"%>
 		<%= f.text_area :description, class: "form-control", placeholder: "Type your strategy here"  %>
 		<%= f.label :file, "Upload a Picture or Video of your Design:", capture: "camera", accept: "image/*" %>
@@ -11,6 +12,6 @@
 		<%= f.submit class: "form-control btn btn-info" %>
 
 		<% end %>
-    
+
 
 </div>
