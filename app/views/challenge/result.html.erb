@@ -4,13 +4,13 @@
             <h1>Great job, <%= current_user.name %>!</h1>
         <div>
             <h3 class="project-submit">This is the project you just submitted:</h3>
-            <img src="<%= current_user.submissions.last.file.url %>"/>
+            <div><img width="500px" src="<%= current_user.submissions.last.file.url %>"/></div>
         </div>
     </div>
     </div>
 
     <div class="jumbotron">
-   
+
         <div class="row">
             <h2>Civil Engineer</h2>
         </div>
@@ -25,7 +25,7 @@
                     <p class="bio-text">Carlson's best-known project is probably the Checkered House Bridge, on Route 2 in Richmond. In 2012, the 350-foot metal-truss span, the longest of its kind in Vermont, was sliced in two and widened by more than 12 feet. The $15.9 million project, more than 20 years in the making, was the first truss bridge ever widened this way. It earned Carlson, the project manager, several national awards.</p>
             </div>
         </div>
-   
+
 
     <div>
         <h2>Community Designs</h2>
@@ -49,9 +49,14 @@
     <div class="jumbotron">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
-                <h2>Next Challenge:</h2>
-                <img class="next-challenge" src="../../assets/solarcooker.jpg" alt="Responsive image">
-                <div class="center-block"><button type="button" class="btn btn-info">Solar Cooker</button></div>
+              <% next_challenge = Challenge.find(@challenge.id + 1) %>
+              <% if next_challenge != nil %>
+                  <h2>Next Challenge:</h2>
+                  <%= image_tag(next_challenge.image_location, width: "100") %>
+                  <div class="center-block"><a href="<%= challenge_show_path(:challenge_id => next_challenge.id) %>" type="button" class="btn btn-info"><%= next_challenge.title %></a></div>
+              <% else %>
+                <h2>You're done with all the challenges! Great job!</h2>
+              <% end %>
             </div>
         </div>
     </div>
