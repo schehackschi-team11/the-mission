@@ -11,7 +11,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151017143758) do
+ActiveRecord::Schema.define(version: 20151017184758) do
+
+  create_table "challenges", force: :cascade do |t|
+    t.string   "title"
+    t.string   "story"
+    t.string   "mission"
+    t.string   "image_location"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
+  create_table "constraints", force: :cascade do |t|
+    t.string   "content"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.integer  "challenge_id"
+  end
+
+  create_table "materials", force: :cascade do |t|
+    t.string   "content"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.integer  "challenge_id"
+  end
 
   create_table "submissions", force: :cascade do |t|
     t.string   "file"
@@ -24,6 +47,7 @@ ActiveRecord::Schema.define(version: 20151017143758) do
   add_index "submissions", ["user_id"], name: "index_submissions_on_user_id"
 
   create_table "users", force: :cascade do |t|
+    t.string   "name",                                null: false
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
     t.string   "reset_password_token"
@@ -36,7 +60,6 @@ ActiveRecord::Schema.define(version: 20151017143758) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
-    t.string   "name"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

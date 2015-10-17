@@ -1,7 +1,12 @@
-class ChallengeControllerController < ApplicationController
+class ChallengeController < ApplicationController
   before_action :authenticate_user!
 
-  def challenge
+  def index 
+      @challenges = Challenge.all
+  end
+
+  def show 
+    @challenge = Challenge.find(params[:id])
   end
 
   # GET
@@ -14,7 +19,7 @@ class ChallengeControllerController < ApplicationController
     @submission = current_user.submissions.new(submission_params)
 
     if @submission.save
-      redirect_to challenge_controller_result_path
+      redirect_to challenge_result_path
     else
       render :submit
     end
