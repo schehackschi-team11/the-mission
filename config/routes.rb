@@ -1,12 +1,13 @@
 Rails.application.routes.draw do
-  get 'challenge/challenge'
+
+  get 'challenge/show'
 
   get 'challenge/submit'
 
   post 'challenge/post_result'
   get 'challenge/result'
 
-  root to: 'visitors#index'
+  root to: 'challenge#index'
   devise_for :users
   resources :users
 end

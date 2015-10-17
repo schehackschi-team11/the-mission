@@ -1,0 +1,12 @@
+
+<div>
+      <% @challenges.each do | challenge | %>
+        <div class="challenge">
+          <h1><%= challenge.title %></h1>
+          <%= image_tag(challenge.image_location) %>
+          <%= link_to('Show', {:action => 'show', :id=> challenge.id}) %>
+        </div>
+      <% end %>
+</div>
+
+     
