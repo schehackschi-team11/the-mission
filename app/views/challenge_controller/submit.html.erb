@@ -1,2 +1,8 @@
 <h1>ChallengeController#submit</h1>
 <p>Find me in app/views/challenge_controller/submit.html.erb</p>
+<%= form_for Submission.new, url: challenge_controller_result_path do |f|  %>
+<%= f.text_field :description, class: "form-control" %>
+<%= f.text_field :file, class: "form-control" %>
+<%= f.submit class: "form-control" %>
+
+<% end %>
