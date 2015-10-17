@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
-  get 'challenge_controller/challenge'
+  get 'challenge/challenge'
 
-  get 'challenge_controller/submit'
+  get 'challenge/submit'
 
-  post 'challenge_controller/post_result'
-  get 'challenge_controller/result'
+  post 'challenge/post_result'
+  get 'challenge/result'
 
   root to: 'visitors#index'
   devise_for :users
