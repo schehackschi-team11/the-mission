@@ -1,0 +1,2 @@
+module ChallengeControllerHelper
+end
