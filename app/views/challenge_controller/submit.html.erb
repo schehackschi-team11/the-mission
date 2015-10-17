@@ -5,7 +5,7 @@
 		<%= form_for @submission, url: challenge_controller_post_result_path do |f|  %>
 		<%= f.label :description, "Describe your Solution:"%>
 		<%= f.text_area :description, class: "form-control", placeholder: "Type your strategy here"  %>
-		<%= f.label :file, "Upload a Picture or Video of your Design:" %>
+		<%= f.label :file, "Upload a Picture or Video of your Design:", capture: "camera", accept: "image/*" %>
 		<%= f.file_field :file, class: "form-control"  %>
 		<%= f.submit class: "form-control" %>
 
