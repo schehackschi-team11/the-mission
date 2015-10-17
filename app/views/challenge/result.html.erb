@@ -1,29 +1,35 @@
 <div id="result">
-    <h1>Congrats <%= current_user.email %>!</h1>
-    <div>
-        <p>This is the project you just submitted:</p>
-        <img src="<%= current_user.submissions.last.file.url %>"/>
+    <div class="container-fluid">
+        <div class="col-xs-12">
+            <h1>Great job, <%= current_user.name %>!</h1>
+        <div>
+            <p>This is the project you just submitted:</p>
+            <img src="<%= current_user.submissions.last.file.url %>"/>
+        </div>
+    </div>
     </div>
 
       
     <div class="jumbotron">
         <div class="row">
-            <h2>Real Civil Engineer</h2>
+            <h2>Civil Engineer</h2>
         </div>
         <div class="row">
             <div>
-                <img class="engineer-profile" src="http://thumbs.dreamstime.com/z/engineer-entrepreneur-architect-business-woman-29079430.jpg"/>
+                <img class="engineer-profile" src="http://media2.fdncms.com/sevendaysvt/imager/work-profile-carolyn-carlson-civil-engin/u/original/2408964/work1-1.jpg"/>
             </div>
             <div>
-                    <h3>Name</h3>
-                    <p>This is a description for the real engineer</p>
+                    <h3>Carolyn Carlson</h3>
+                    <h4>from Williston, Vermont</h4>
+                    <p>Carolyn Carlson is a civil engineer in the structures section of the Vermont Agency of Transportation. That's the division responsible for maintaining Vermont's 2,712 interstate, state and town bridges. If it spans more than 20 feet over a road, river or railroad, she probably knows it.</p>
+                    <p>Carlson's best-known project is probably the Checkered House Bridge, on Route 2 in Richmond. In 2012, the 350-foot metal-truss span, the longest of its kind in Vermont, was sliced in two and widened by more than 12 feet. The $15.9 million project, more than 20 years in the making, was the first truss bridge ever widened this way. It earned Carlson, the project manager, several national awards.</p>
             </div>
         </div>
     </div>
 
     <div>
         <h2>Community Designs</h2>
-            <p>Examples from other students</p>
+            <p>Prototypes from other students</p>
     </div>
     <div class="container-fluid">
         <% Submission.all.each do |submission| %>
@@ -32,7 +38,7 @@
                     <div class="thumbnail">
                     <img class="project-thumb"src="<%= submission.file.url %>"/>
                     <div class="caption">
-                        <h3><%= submission.user.email %></h3>
+                        <h3><%= submission.user.name %></h3>
                         <p><%= submission.description %></p>
                     </div>
                 </div>
@@ -43,9 +49,9 @@
     <div class="jumbotron">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
-                <h2>Build Shelter</h2>
-                <img src="http://www.howtoinstructions.org/wp-content/uploads/2013/11/How-to-build-a-house-with-Popsicle-Sticks-step-by-step-DIY-tutorial-instructions-thumb-332x332.jpg" class="img-responsive" alt="Responsive image">
-                <div class="center-block"><button type="button" class="btn btn-primary">Next Challenge</button></div>
+                <h2>Next Challenge:</h2>
+                <img src="../../assets/solarcooker.jpg" alt="Responsive image">
+                <div class="center-block"><button type="button" class="btn btn-primary">Solar Cooker</button></div>
             </div>
         </div>
     </div>
