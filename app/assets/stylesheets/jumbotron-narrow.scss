@@ -79,10 +79,10 @@ body {
 }
 
 
-/* Challenge specific CSS */ 
+/* Challenge specific CSS */
 
 #challenge .jumbotron {
-    background-color: #1ACFEF;  
+    background-color: #1ACFEF;
 }
 
 #challenge p.lead {
@@ -108,15 +108,15 @@ p.challenge-btn {
 }
 
 .modal-body {
-    text-align: center;   
+    text-align: center;
 }
 
 
 .links {
-    color: #1ACFEF;      
+    color: #1ACFEF;
 }
 
-/* Navbar Entire Site */ 
+/* Navbar Entire Site */
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
     color: #fff;
     background-color: #1ACFEF;
@@ -132,7 +132,12 @@ p.challenge-btn {
     color: #1ACFEF;
 }
 
+.logo {
+  width: 150px;
+  display: initial;
+}
 
+/* Footer */
 footer div.company-first {
     float: left;
 }
@@ -167,12 +172,11 @@ h1 {
 
 
 .form-control {
-    margin: 0 0 30px 0;   
+    margin: 0 0 30px 0;
 }
 
 input.form-control.btn {
-   max-width: 150px; 
+   max-width: 150px;
     text-align-last: center;
     margin-left: 40%;
 }
-
