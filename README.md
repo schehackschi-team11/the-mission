@@ -1,3 +1,4 @@
+>>>>>>> HEAD
 The Mission
 ================
 
@@ -48,3 +49,6 @@ Credits
 
 License
 -------
+=======
+# the-mission
+>>>>>>> 7a8702b86c08db00858a689ff5f250001a501019
