@@ -3,8 +3,8 @@ class ChallengeControllerController < ApplicationController
       @challenges = Challenge.all
   end
 
-  
-  def challenge
+  def show 
+    @challenge = Challenge.find(params[:id])
   end
 
   # GET
