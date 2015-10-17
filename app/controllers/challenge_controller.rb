@@ -1,4 +1,4 @@
-class ChallengeControllerController < ApplicationController
+class ChallengeController < ApplicationController
   before_action :authenticate_user!
 
   def index 
@@ -19,7 +19,7 @@ class ChallengeControllerController < ApplicationController
     @submission = current_user.submissions.new(submission_params)
 
     if @submission.save
-      redirect_to challenge_controller_result_path
+      redirect_to challenge_result_path
     else
       render :submit
     end
