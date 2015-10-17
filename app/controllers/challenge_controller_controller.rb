@@ -1,4 +1,6 @@
 class ChallengeControllerController < ApplicationController
+  before_action :authenticate_user!
+
   def challenge
   end
 
@@ -21,7 +23,7 @@ class ChallengeControllerController < ApplicationController
   # GET
   def result
   end
-  
+
   private
 
   def submission_params
