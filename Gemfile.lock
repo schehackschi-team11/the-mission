@@ -248,10 +248,3 @@ DEPENDENCIES
   sqlite3
   uglifier (>= 1.3.0)
   web-console (~> 2.0)
-
-BUNDLED WITH
-<<<<<<< HEAD
-   1.10.6
-=======
-   1.10.2
->>>>>>> master
