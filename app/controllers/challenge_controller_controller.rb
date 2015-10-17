@@ -1,15 +1,12 @@
 class ChallengeControllerController < ApplicationController
   before_action :authenticate_user!
-  
+
   def index 
       @challenges = Challenge.all
   end
 
   def show 
     @challenge = Challenge.find(params[:id])
-  end
-
-  def challenge
   end
 
   # GET
