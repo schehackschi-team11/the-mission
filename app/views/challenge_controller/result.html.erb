@@ -1,4 +1,4 @@
-<h1>Congrats!</h1>
+<h1>Congrats <%= current_user.email %>!</h1>
 
   
 <div class="jumbotron">
@@ -6,18 +6,23 @@
         <h2>Real Civil Engineer</h2>
     </div>
     <div class="row">
-        <div class=".col-xs-6 .col-md-4">
+        <div class=".col-xs-6 col-md-4">
             <img class="engineer-profile" src="http://thumbs.dreamstime.com/z/engineer-entrepreneur-architect-business-woman-29079430.jpg"/>
         </div>
-        <div class="col-xs-12 .col-sm-6 .col-md-8">
-            <h3>Name</h3>
-            <p>This is a description for the real engineer</p></div>
+        <div class="col-xs-12 col-sm-6 col-md-8">
+            <div class="row">
+            	<div class="col-md-4">
+            		<h3>Name</h3>
+            	</div>
+            </div>
+            	<div><p>This is a description for the real engineer</p></div>
         </div>
     </div>
 </div>
 
 <div>
     <h2>Community Designs</h2>
+    	<p>Examples from other students</p>
     <div class="row">
         <div class="col-sm-6 col-md-4">
             <div class="thumbnail">
@@ -48,4 +53,10 @@
             </div>
         </div>
     </div>
+    <div class="row">
+    	<div class="col-md-6 col-md-offset-3">
+    		<img src="..." class="img-responsive" alt="Responsive image">
+    		<div class="center-block"><button type="button" class="btn btn-primary">Next Challenge</button></div>
+    	</div>
+  	</div>
 </div>
