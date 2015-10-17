@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   get 'challenge_controller/challenge'
 
-  get 'challenge_controller/submit', as: :challenge_controller_submit
+  get 'challenge_controller/submit'
 
+  post 'challenge_controller/post_result'
   get 'challenge_controller/result'
 
   root to: 'visitors#index'
