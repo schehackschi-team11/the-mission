@@ -7,7 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-# Challenge 1 
+# Challenge 1
 challenge1 = Challenge.new
 challenge1.story = "You woke up and find yourself on a stranded island. Oh No! What are you going to do? You look around and see another island...and it has FOOD! But wait, how are you going to get over there? Then you think, I can build a bridge?"
 challenge1.title = "Island MADNESS"
@@ -20,7 +20,7 @@ material1 = Material.new
 material1.content = "50 drinking straws"
 material2 = Material.new
 material2.content = "87 centimeters of masking tape"
-material3 = Material.new 
+material3 = Material.new
 material3.content = "2 pairs of scissors"
 
 
@@ -36,11 +36,11 @@ material3.save
 
 constraint1 = Constraint.new
 constraint1.content = "No other materials may be used"
-constraint2 = Constraint.new 
+constraint2 = Constraint.new
 constraint2.content = "Bridge must span 30 cm distance between supports (two tables)"
-constraint3 = Constraint.new 
+constraint3 = Constraint.new
 constraint3.content = "The bridge must be portable. It cannote be attached to supports"
-constraint4 = Constraint.new 
+constraint4 = Constraint.new
 constraint4.content = "Your bridge must have a space in the middle to hold a small cup"
 
 
@@ -57,7 +57,7 @@ constraint2.save
 constraint3.save
 constraint4.save
 
-# Challenge 2 
+# Challenge 2
 challenge1 = Challenge.new
 challenge1.story = "You woke up and find yourself on a stranded island. Oh No! What are you going to do? You look around and see another island...and it has FOOD! But wait, how are you going to get over there? Then you think, I can build a bridge?"
 challenge1.title = "Escape BOAT"
@@ -70,7 +70,7 @@ material1 = Material.new
 material1.content = "50 drinking straws"
 material2 = Material.new
 material2.content = "87 centimeters of masking tape"
-material3 = Material.new 
+material3 = Material.new
 material3.content = "2 pairs of scissors"
 
 
@@ -86,11 +86,11 @@ material3.save
 
 constraint1 = Constraint.new
 constraint1.content = "No other materials may be used"
-constraint2 = Constraint.new 
+constraint2 = Constraint.new
 constraint2.content = "Bridge must span 30 cm distance between supports (two tables)"
-constraint3 = Constraint.new 
+constraint3 = Constraint.new
 constraint3.content = "The bridge must be portable. It cannote be attached to supports"
-constraint4 = Constraint.new 
+constraint4 = Constraint.new
 constraint4.content = "Your bridge must have a space in the middle to hold a small cup"
 
 
@@ -121,7 +121,7 @@ material1 = Material.new
 material1.content = "50 drinking straws"
 material2 = Material.new
 material2.content = "87 centimeters of masking tape"
-material3 = Material.new 
+material3 = Material.new
 material3.content = "2 pairs of scissors"
 
 
@@ -137,11 +137,11 @@ material3.save
 
 constraint1 = Constraint.new
 constraint1.content = "No other materials may be used"
-constraint2 = Constraint.new 
+constraint2 = Constraint.new
 constraint2.content = "Bridge must span 30 cm distance between supports (two tables)"
-constraint3 = Constraint.new 
+constraint3 = Constraint.new
 constraint3.content = "The bridge must be portable. It cannote be attached to supports"
-constraint4 = Constraint.new 
+constraint4 = Constraint.new
 constraint4.content = "Your bridge must have a space in the middle to hold a small cup"
 
 
@@ -163,7 +163,7 @@ constraint4.save
 challenge1 = Challenge.new
 challenge1.story = "You woke up and find yourself on a stranded island. Oh No! What are you going to do? You look around and see another island...and it has FOOD! But wait, how are you going to get over there? Then you think, I can build a bridge?"
 challenge1.title = "Hurricane Shelter"
-challenge1.image_location = "hurricane_shelter.jpeg"
+challenge1.image_location = "evil-hurricane.png"
 challenge1.mission = "Build a bridge to get to other island that has food."
 challenge1.save
 
@@ -172,7 +172,7 @@ material1 = Material.new
 material1.content = "50 drinking straws"
 material2 = Material.new
 material2.content = "87 centimeters of masking tape"
-material3 = Material.new 
+material3 = Material.new
 material3.content = "2 pairs of scissors"
 
 
@@ -188,11 +188,11 @@ material3.save
 
 constraint1 = Constraint.new
 constraint1.content = "No other materials may be used"
-constraint2 = Constraint.new 
+constraint2 = Constraint.new
 constraint2.content = "Bridge must span 30 cm distance between supports (two tables)"
-constraint3 = Constraint.new 
+constraint3 = Constraint.new
 constraint3.content = "The bridge must be portable. It cannote be attached to supports"
-constraint4 = Constraint.new 
+constraint4 = Constraint.new
 constraint4.content = "Your bridge must have a space in the middle to hold a small cup"
 
 
