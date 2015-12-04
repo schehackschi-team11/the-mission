@@ -1,6 +1,6 @@
 This application requires:
 
-- Ruby 2.2.0
+- Ruby 2.2.0 or higher
 
 Getting Started
 ---------------
