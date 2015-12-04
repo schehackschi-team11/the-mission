@@ -193,3 +193,4 @@ constraint11.challenge = challenge4
 constraint10.save
 constraint11.save
 
+AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
