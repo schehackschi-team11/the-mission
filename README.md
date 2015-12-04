@@ -2,8 +2,7 @@ This application requires:
 
 - Ruby 2.2.0 or higher
 
-Getting Started
----------------
+## Getting Started
 
 ``` bash
   git clone https://github.com/schehackschi-team11/the-mission.git
@@ -42,4 +41,12 @@ production:
 ``` bash
 rake db:setup db:seed
 rails s
+```
+
+## What to do after deployment
+
+After a pull request has been merged into master and the schema file has been updates run:
+
+``` bash
+heroku run rake db:migrate --app createher
 ```
