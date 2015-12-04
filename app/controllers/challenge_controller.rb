@@ -2,7 +2,7 @@ class ChallengeController < ApplicationController
   before_action :authenticate_user!
 
   def index
-      @challenges = Challenge.all
+      @challenges = Challenge.where(:mission_id => params[:mission_id])
   end
 
   def show
