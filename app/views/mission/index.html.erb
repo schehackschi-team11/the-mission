@@ -1,0 +1,8 @@
+<div>
+      <% @missions.each do | mission | %>
+        <div class="challenge">
+          <h1><%= mission.title %></h1>
+          <%= link_to(image_tag(mission.image_location), {:controller => 'challenge', :action => 'index', :mission_id => mission.id}) %>
+        </div>
+      <% end %>
+</div>

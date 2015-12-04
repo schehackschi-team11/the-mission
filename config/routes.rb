@@ -1,13 +1,14 @@
 Rails.application.routes.draw do
 
+  get 'challenges', to: 'challenge#index'
   get 'challenge/show'
-
   get 'challenge/submit'
-
   post 'challenge/post_result'
   get 'challenge/result'
 
-  root to: 'challenge#index'
+  # get 'island_mission'
+
+  root to: 'mission#index'
   devise_for :users
   resources :users
 end

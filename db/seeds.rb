@@ -11,9 +11,11 @@
 challenge1 = Challenge.new
 challenge1.story = "You wake up and find yourself stranded on an island. Oh No! What are you going to do? Your mouth is dry but you know you can't drink the salty ocean water. You look around and see a rushing waterfall, but it's across a ravine. How are you going to get over there? Then you think, I can build a bridge!"
 challenge1.title = "Build-A-Bridge"
-challenge1.mission = "Build a bridge that is at least 30cm long to get to other side of the ravine. Test that your bridge will support you by counting the number of pennies it will hold before it bends. Once your bridge is long enough and sturdy enough, you will be able to cross the ravine and enjoy your well-earned water."
-challenge1.image_location = "island_madness.jpg"
+challenge1.description = "Build a bridge that is at least 30cm long to get to other side of the ravine. Test that your bridge will support you by counting the number of pennies it will hold before it bends. Once your bridge is long enough and sturdy enough, you will be able to cross the ravine and enjoy your well-earned water."
+challenge1.image_location = "bridge.jpg"
+challenge1.mission_id= 1
 challenge1.save
+
 
 
 material1 = Material.new
@@ -67,7 +69,8 @@ challenge2 = Challenge.new
 challenge2.story = "You were creative and hard-working and passed the first mission. You have access to a limitless supply of water but your stomach is growling. In order to survive the island, you must build a solar cooker so you're ready for your first island meal."
 challenge2.title = "Solar Stove"
 challenge2.image_location = "solar_panel_cooker.jpg"
-challenge2.mission = "Build a solar cooker for your island meals. It must be able to turn a square of Hershey's chocolate into pure liquid!"
+challenge2.description = "Build a solar cooker for your island meals. It must be able to turn a square of Hershey's chocolate into pure liquid!"
+challenge2.mission_id= 1
 challenge2.save
 
 
@@ -108,7 +111,8 @@ challenge3 = Challenge.new
 challenge3.story = "Food, Water - Now it's time for shelter. Your bridge and solar cooker were impressive - you clearly know what hard work looks like, but now it's time for a true challenge. You notice the clouds thickening and the wind picking up speed. Can you build a shelter that will survive the gusts and keep you dry? Like a great engineer, you might have to test and rebuild a few times to get the perfect shelter. Submit a picture even if it doesn't work the first time - we can all learn from your ideas and grow stronger!"
 challenge3.title = "Storm Shelter"
 challenge3.image_location = "evil-hurricane.png"
-challenge3.mission = "Build a structure that withstands a tropical storm. Your shelter must keep you (a cotton ball) dry after surviving strong winds (the blowdryer of doom!)."
+challenge3.description = "Build a structure that withstands a tropical storm. Your shelter must keep you (a cotton ball) dry after surviving strong winds (the blowdryer of doom!)."
+challenge3.mission_id= 1
 challenge3.save
 
 
@@ -155,7 +159,8 @@ challenge4= Challenge.new
 challenge4.title = "Balloon Boat"
 challenge4.story = "You are remarkable! You got to water, cooked your own food, and built a sturdy shelter. You have survived this long and are determined to go home and see your family. With your strength regained, you decide it's time to build a boat and say goodbye to the island life"
 challenge4.image_location = "escape_boat.png"
-challenge4.mission = "Build a boat that will get you off this island! To make your boat speed away, stick one end of  straw into an unblown balloon. Wrap a rubberband around that end of the balloon and straw. When you have built your boat, attatch the balloon/straw combination, blow the balloon up and release the open end of the straw."
+challenge4.description = "Build a boat that will get you off this island! To make your boat speed away, stick one end of  straw into an unblown balloon. Wrap a rubberband around that end of the balloon and straw. When you have built your boat, attatch the balloon/straw combination, blow the balloon up and release the open end of the straw."
+challenge4.mission_id= 1
 challenge4.save
 
 
@@ -192,4 +197,12 @@ constraint11.challenge = challenge4
 
 constraint10.save
 constraint11.save
+
+#Mission 1
+mission1 = Mission.new
+mission1.title = "Island Madness"
+mission1.age_range = "3rd-5th"
+mission1.mission_description = "Can you build a bridge, solar cooker, shelter and boat to survive and escape a lonely island"
+mission1.image_location = "island_madness.jpg"
+mission1.save
 

@@ -11,15 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151106015502) do
+ActiveRecord::Schema.define(version: 20151204211644) do
 
   create_table "challenges", force: :cascade do |t|
     t.string   "title"
     t.string   "story"
-    t.string   "mission"
+    t.string   "description"
     t.string   "image_location"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
+    t.integer  "mission_id"
   end
 
   create_table "constraints", force: :cascade do |t|
@@ -38,8 +39,12 @@ ActiveRecord::Schema.define(version: 20151106015502) do
 
   create_table "missions", force: :cascade do |t|
     t.string   "title"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
+    t.string   "mission_title"
+    t.string   "image_location"
+    t.string   "mission_description"
+    t.string   "age_range"
   end
 
   create_table "submissions", force: :cascade do |t|
