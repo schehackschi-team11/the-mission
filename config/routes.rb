@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+
   get 'challenges', to: 'challenge#index'
   get 'challenge/show'
   get 'challenge/submit'

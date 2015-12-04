@@ -198,6 +198,7 @@ constraint11.challenge = challenge4
 constraint10.save
 constraint11.save
 
+
 #Mission 1
 mission1 = Mission.new
 mission1.title = "Island Madness"
@@ -205,4 +206,6 @@ mission1.age_range = "3rd-5th"
 mission1.mission_description = "Can you build a bridge, solar cooker, shelter and boat to survive and escape a lonely island"
 mission1.image_location = "island_madness.jpg"
 mission1.save
+
+AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
 
